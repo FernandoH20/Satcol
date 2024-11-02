@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 01-dic-2016, 9:29:21
+    Author     : vincen.alvarado
+*/
+
+/*modal coupled*/
+.modalCoupled {
+    display: none;
+    position: fixed;
+    top: -1%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: auto;
+    background: #fff;
+    background: rgba(255,255,255,0.98);
+    padding: 22px 32px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 0 18px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.9);
+    -box-shadow: 0 0 18px rgba(0, 0, 0, 0.9);
+    /*    z-index: 1500;*/
+    z-index: 1050;
+    width: auto;
+}
+
+.modal-open[style] .modalCoupled{
+    left: -17px;
+}
+
+.modalCoupled .misc
+{
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 100%;
+}
+
+.modalCoupled footer {
+    background: #555;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 50%;
+}
+.modalCoupled .misc, .modalCoupled .misc a{
+    color: white;
+    background:#009688;
+    border-radius:44%;
+    -moz-border-radius: 44%;
+    -webkit-border-radius: 44%;
+    cursor: pointer;
+}
+.modalCoupled footer a:hover {color: #9CF;}/*Fin*/
+
+.input-group-btn .toggle-on, .input-group-btn .toggle-off {
+    will-change: initial !important;
+}
+
+
+@media (min-width: 768px) {
+    .modalCoupled {
+        width: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modalCoupled {
+        width: 900px;
+    }
+}

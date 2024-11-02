@@ -1,0 +1,47 @@
+ /* PluginName wdgtDocumento 
+ * @description validation form
+ * @autor Vincen Alvarado Nina
+ * @requires jquery
+ * @example initialize $(selector).validation()
+ * @example get instance $(selector).data('validation');
+ * @example call methods from data $(selector).data('validation').show();
+ * @example call methods from object object.show();
+ * @function 
+ * @return this
+ */
+ (function ($) {
+    "use strict";
+
+    var Validation = function (element, option) {
+        var defaults = {         
+        };
+        this.forms = $(element);
+        this.option = $.extend({}, defaults, option);        
+        this.init();
+    };
+    Validation.prototype = {
+        init: function () {                        
+            var _self;
+            _self.forms.filter(':input').each(function(element,index){                
+                console.log(element);
+            });
+        }        
+    };
+    $.fn.validation = function (option) {
+        var arg = arguments,
+        options = typeof option === 'object' && option;
+        return this.each(function () {
+            var $this = $(this),
+            data = $this.data('validation');
+            if (!data)
+                $this.data('validation', (data = new Validation(this, options)));
+            if (typeof option === 'string') {
+                if (arg.length > 1) {
+                    data[option].apply(data, Array.prototype.slice.call(arg, 1));
+                } else {
+                    data[option]();
+                }
+            }
+        });
+    };     
+})(jQuery);

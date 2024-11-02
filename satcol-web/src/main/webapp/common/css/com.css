@@ -1,0 +1,364 @@
+
+/*icon refresh table*/
+.glyphicon-refresh, .glyphicon-refresh:active{
+    color:white;
+}
+.glyphicon-refresh:hover{
+    color:black;
+    text-decoration: none;
+}
+.glyphicon-refresh:focus{
+    text-decoration: none;
+}
+
+/*Data table corregir*/
+table.dataTable tbody tr{
+    cursor:pointer;
+}
+
+/*Estilos para el menu nuevo*/
+/*.navbar-default{
+color: #fff;
+background-color: #ccc6c6;
+border-color: #aca1a2;
+}
+.navbar-default .navbar-nav > li > a{
+    color:#fff;
+}
+.navbar-default .navbar-nav > .dropdown > a .caret{
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+.navbar-default .navbar-brand{
+    color:#fff;
+}*/
+.menu-large {
+    position: static !important;
+}
+.megamenu{
+    padding: 20px 0px;
+    width:100%;
+}
+.megamenu> li > ul {
+    padding: 0;
+    margin: 0;
+}
+.megamenu> li > ul > li {
+    list-style: none;
+}
+.megamenu> li > ul > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333333;
+    white-space: normal;
+}
+.megamenu> li ul > li > a:hover,
+.megamenu> li ul > li > a:focus {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5;
+}
+.megamenu.disabled > a,
+.megamenu.disabled > a:hover,
+.megamenu.disabled > a:focus {
+    color: #999999;
+}
+.megamenu.disabled > a:hover,
+.megamenu.disabled > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    cursor: not-allowed;
+}
+.megamenu.dropdown-header {
+    color: #428bca;
+    font-size: 18px;
+}
+@media (max-width: 768px) {
+    .megamenu{
+        margin-left: 0 ;
+        margin-right: 0 ;
+    }
+    .megamenu> li {
+        margin-bottom: 30px;
+    }
+    .megamenu> li:last-child {
+        margin-bottom: 0;
+    }
+    .megamenu.dropdown-header {
+        padding: 3px 15px !important;
+
+    }
+    .navbar-nav .open .dropdown-menu .dropdown-header{
+        color:#fff;
+    }
+}
+
+.fixContentLi{
+    position: initial!important;
+}
+
+
+/*fix menu*/
+.headerAplicacion{
+    color: #2e6da4!important;
+}
+
+.headerModulo {
+    color: black!important;
+    font-style: italic;
+    text-decoration: underline;
+}
+.headerVistaEjecutable{
+    list-style-type: circle;
+    margin: 0px -30px;
+}
+
+.sliderMenuColpase{
+    margin-left: 10px;
+}
+
+/*tabs custom*/
+.tabs-left, .tabs-right {
+    border-bottom: none;
+    padding-top: 2px;
+}
+.tabs-left {
+    border-right: 1px solid #ddd;
+}
+.tabs-right {
+    border-left: 1px solid #ddd;
+}
+.tabs-left>li, .tabs-right>li {
+    float: none;
+    margin-bottom: 2px;
+}
+.tabs-left>li {
+    margin-right: -1px;
+}
+.tabs-right>li {
+    margin-left: -1px;
+}
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+    border-bottom-color: #ddd;
+    border-right-color: transparent;
+}
+
+.tabs-right>li.active>a,
+.tabs-right>li.active>a:hover,
+.tabs-right>li.active>a:focus {
+    border-bottom: 1px solid #ddd;
+    border-left-color: transparent;
+}
+.tabs-left>li>a {
+    border-radius: 4px 0 0 4px;
+    margin-right: 0;
+    display:block;
+}
+.tabs-right>li>a {
+    border-radius: 0 4px 4px 0;
+    margin-right: 0;
+}
+.vertical-text {
+    margin-top:50px;
+    border: none;
+    position: relative;
+}
+.vertical-text>li {
+    height: 20px;
+    width: 120px;
+    margin-bottom: 100px;
+}
+.vertical-text>li>a {
+    border-bottom: 1px solid #ddd;
+    border-right-color: transparent;
+    text-align: center;
+    border-radius: 4px 4px 0px 0px;
+}
+.vertical-text>li.active>a,
+.vertical-text>li.active>a:hover,
+.vertical-text>li.active>a:focus {
+    border-bottom-color: transparent;
+    border-right-color: #ddd;
+    border-left-color: #ddd;
+}
+.vertical-text.tabs-left {
+    left: -50px;
+}
+.vertical-text.tabs-right {
+    right: -50px;
+}
+.vertical-text.tabs-right>li {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.vertical-text.tabs-left>li {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+label.error{
+    color:#d00;
+    font-size: 12px;
+}
+input.upper,textarea.upper { text-transform: uppercase; }
+
+/*forzado*/
+.menos2{
+    margin-bottom:-2px;
+}
+.menosR10{
+    margin-right:-10px;
+    width:21% !important;
+    margin-bottom:-20px;
+}
+
+.menosR11{
+    margin-bottom:-30px;
+    margin-top:-5px;
+}
+
+.menosR12{
+    margin-right:-10px;
+    width:33% !important;
+    margin-bottom:-20px;
+}
+.tableModifiedLec
+{
+    width:100%;
+    height:350px;
+    overflow: scroll;
+}
+
+.menosR13{
+    width:22% !important;
+}
+
+.menosR14{
+    width:21% !important;
+}
+
+.menosR15{
+    width:19% !important;
+}
+
+.noShowThis{
+    display: none;
+}
+.mrg-right{
+    margin-right: 15px;
+}
+.overflow-scroll {
+    overflow: scroll !important;
+}
+
+.overflow-auto {
+    overflow: auto !important;
+}
+
+.overflow-scrollX {
+    box-sizing: border-box !important;
+    overflow-x: scroll !important;
+}
+
+.overflow-scrollY {
+    box-sizing: border-box !important;
+    overflow-y: scroll !important;
+}
+.overflow-none {
+    overflow: hidden !important;
+}
+.scrollable-modal{
+    max-height: 100%;
+    overflow-y: auto;
+}
+.padding-top{
+    padding-top: 20px !important;
+}
+.width-50{
+    width: 50%;
+}
+.radius{
+    line-height: 1.4 !important;
+    padding: 1px !important;
+    height: 19px;
+    width: 19px;
+    border-radius: 50% !important;
+}
+.changeZIndex{
+    z-index: 1040 !important;
+}
+
+.changeZIndex1000{
+    z-index: 1000 !important;
+}
+.border-top_0{
+    border-top: 0 !important;
+}
+.btsColorWarning{
+    color: white;
+    background: #F0AD4E;
+}
+.btsColorDanger{
+    color: white;
+    background: #D9534F;
+}
+.btsColorDanger:hover{
+    background: #BD2E29;
+}
+.btsColorInfo{
+    color: white;
+    background: #5BC0DE !important;
+}
+.btsColorInfo:hover{
+    background: #269BBE !important
+}
+
+.btsColorSuccess{
+    color: white;
+    background: #5CB85C;
+}
+.btsColorSuccess:hover{
+    color: white;
+    background: #50B450;
+}
+.btsColorInverse{
+    color: white;
+    background: #292B2C;
+}
+.txt12{
+    font-size: 12px;
+}
+.txt20{
+    font-size: 20px;
+}
+.btsTextColorInfo{
+    color: #5BC0DE;
+}
+
+.inputsStyle
+{
+    background: rgb(250, 255, 189);
+    padding: 0px;
+}
+
+.InitialDisplayLabel
+{
+    display: initial;
+}
+.alginLables
+{
+    float: right;
+}
